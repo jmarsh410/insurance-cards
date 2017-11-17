@@ -1,0 +1,233 @@
+@import '../variables.css';
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: var(--sm-card-width);
+  border: 1px solid var(--border-gray);
+  border-radius: 2px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+
+.cornerTag {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--purple);
+
+  &::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: var(--purple);
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+.cornerIcon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  margin: 5px;
+  background-color: transparent;
+}
+
+.imageNameContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 80px;
+  min-width: 80px;
+  margin-right: 5px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.name {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.stars {
+  margin-bottom: 10px;
+}
+
+.featureIcon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.starIcon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  stroke: var(--border-gray);
+  margin-right: 3px;
+}
+
+.details {
+  text-align: center;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.verified {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.dollar {
+  font-size: 1rem;
+  vertical-align: super;
+}
+
+.price {
+  font-size: 2rem;
+  padding: 0 10px;
+}
+
+.month {
+  color: var(--text-gray);
+}
+
+.drawer {
+  margin-top: 20px;
+  color: var(--text-gray);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.6s ease;
+
+  > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    padding-left: 25px;
+    list-style-type: disc;
+  }
+
+  [data-open='true'] & {
+    max-height: 400px;
+  }
+}
+
+.drawerTitle {
+  border-bottom: 1px solid var(--border-gray);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.drawerButton {
+  width: 100%;
+  background: transparent;
+  fill: var(--gray);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+
+  &:hover,
+  &:active,
+  &:focus,
+  :active:focus {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  [data-open='true'] & {
+    transform: rotate(180deg);
+  }
+}
+
+.drawerIcon {
+  display: inline-block;
+  margin-top: -2px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+@media (--screen-sm-viewport) {
+  .container {
+    max-width: var(--max-content-width);
+    padding: 30px 30px 0;
+  }
+
+  .main {
+    display: flex;
+  }
+
+  .starFeatureContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .stars {
+    margin: -5px 20px 0 0;
+  }
+
+  .features {
+    max-width: 200px;
+  }
+
+  .details {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+  }
+
+  .payment {
+    margin-bottom: 0;
+  }
+
+  .dollar {
+    font-size: 1.5rem;
+  }
+
+  .price {
+    font-size: 3rem;
+  }
+
+  .month {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+  }
+
+  .drawer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .drawerSection {
+    max-width: 48%;
+    flex: 1;
+  }
+}
+
+@media (--screen-md-viewport) {
+  .features {
+    max-width: none;
+  }
+}

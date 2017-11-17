@@ -1,0 +1,6 @@
+{
+  "name": "InsuranceCard",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./InsuranceCard.js"
+}
