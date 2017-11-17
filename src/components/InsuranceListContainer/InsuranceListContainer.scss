@@ -1,0 +1,42 @@
+@import '../variables.css';
+
+.root {
+  color: black;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: var(--max-content-width);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.stats {
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: var(--screen-sm-min)) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .stats {
+    margin-bottom: 0;
+  }
+}
