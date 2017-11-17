@@ -9,79 +9,13 @@ exports[`Layout renders children correctly 1`] = `
       className="container"
     >
       <div
-        className="root"
-        role="navigation"
-      >
-        <a
-          className="link"
-          href="/about"
-          onClick={[Function]}
-        >
-          About
-        </a>
-        <a
-          className="link"
-          href="/contact"
-          onClick={[Function]}
-        >
-          Contact
-        </a>
-        <span
-          className="spacer"
-        >
-           | 
-        </span>
-        <a
-          className="link"
-          href="/login"
-          onClick={[Function]}
-        >
-          Log in
-        </a>
-        <span
-          className="spacer"
-        >
-          or
-        </span>
-        <a
-          className="link highlight"
-          href="/register"
-          onClick={[Function]}
-        >
-          Sign up
-        </a>
-      </div>
-      <a
-        className="brand"
-        href="/"
-        onClick={[Function]}
-      >
-        <img
-          alt="React"
-          height="38"
-          src="logo-small.png"
-          srcSet="logo-small@2x.png 2x"
-          width="38"
-        />
-        <span
-          className="brandTxt"
-        >
-          Your Company
-        </span>
-      </a>
-      <div
         className="banner"
       >
         <h1
           className="bannerTitle"
         >
-          React
+          Insurance Cards
         </h1>
-        <p
-          className="bannerDesc"
-        >
-          Complex web apps made easy
-        </p>
       </div>
     </div>
   </div>
@@ -94,83 +28,15 @@ exports[`Layout renders children correctly 1`] = `
     <div
       className="container"
     >
-      <a
-        className="link"
-        href="https://gitter.im/kriasoft/react-starter-kit"
-      >
-        Ask a question
-      </a>
-      <span
-        className="spacer"
-      >
-        |
+      <span>
+        Made by Jered Marshall with 
       </span>
       <a
-        className="link"
-        href="https://github.com/kriasoft/react-starter-kit/issues/new"
+        href="https://github.com/kriasoft/react-starter-kit"
+        rel="noopener noreferrer"
+        target="_blank"
       >
-        Report an issue
-      </a>
-    </div>
-  </div>
-  <div
-    className="root"
-  >
-    <div
-      className="container"
-    >
-      <span
-        className="text"
-      >
-        © Your Company
-      </span>
-      <span
-        className="spacer"
-      >
-        ·
-      </span>
-      <a
-        className="link"
-        href="/"
-        onClick={[Function]}
-      >
-        Home
-      </a>
-      <span
-        className="spacer"
-      >
-        ·
-      </span>
-      <a
-        className="link"
-        href="/admin"
-        onClick={[Function]}
-      >
-        Admin
-      </a>
-      <span
-        className="spacer"
-      >
-        ·
-      </span>
-      <a
-        className="link"
-        href="/privacy"
-        onClick={[Function]}
-      >
-        Privacy
-      </a>
-      <span
-        className="spacer"
-      >
-        ·
-      </span>
-      <a
-        className="link"
-        href="/not-found"
-        onClick={[Function]}
-      >
-        Not Found
+        React Starter Kit
       </a>
     </div>
   </div>
