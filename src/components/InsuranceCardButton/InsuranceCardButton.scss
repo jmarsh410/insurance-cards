@@ -1,0 +1,30 @@
+@import '../variables.css';
+
+.button {
+  border-radius: 36px;
+  padding: 10px 27px 14px;
+  font-size: 1.25rem;
+  color: white;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btnIcon {
+  width: 20px;
+  height: 20px;
+  margin-top: -4px;
+  color: white;
+  fill: white;
+  stroke: white;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.blue {
+  background: var(--btn-blue);
+}
+
+.orange {
+  background: var(--btn-yellow);
+}
