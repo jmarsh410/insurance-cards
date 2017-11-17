@@ -1,0 +1,41 @@
+@import '../variables.css';
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  margin-right: 20px;
+}
+
+.selectContainer {
+  position: relative;
+  flex: 1;
+  min-width: 150px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translateY(-3px) rotate(45deg);
+    border-right: 2px solid var(--text-gray);
+    border-bottom: 2px solid var(--text-gray);
+  }
+}
+
+.select {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--text-gray);
+  border-radius: 4px;
+  box-shadow: var(--shadow-select);
+  padding: 8px 12px;
+  -webkit-appearance: none;
+}
