@@ -18,10 +18,11 @@
    * Colors
    * ======================================================================== */
   --purple: #5c6cff;
-  --btn-yellow: linear-gradient (350deg, #f87000 40%, #f8ae00 85%);
-  --btn-blue: linear-gradient (350deg, #6169f4 40%, #1cbeec 85%);
+  --btn-yellow: linear-gradient(350deg, #f87000 40%, #f8ae00 85%);
+  --btn-blue: linear-gradient(350deg, #6169f4 40%, #1cbeec 85%);
   --gray: #959595;
   --text-gray: #959595;
+  --border-gray: #eff1f1;
 
   /*
    * Box Shadows - based on Material
@@ -35,6 +36,7 @@
    * Layout
    * ======================================================================== */
 
+  --sm-card-width: 320px;
   --max-content-width: 1000px;
 
   /*
@@ -45,4 +47,9 @@
   --screen-sm-min: 768px;  /* Small screen / tablet */
   --screen-md-min: 992px;  /* Medium screen / desktop */
   --screen-lg-min: 1200px; /* Large screen / wide desktop */
+
+  @custom-media --screen-xs-viewport (min-width: 480px);  /* Extra small screen / phone */
+  @custom-media --screen-sm-viewport (min-width: 768px);  /* Small screen / tablet */
+  @custom-media --screen-md-viewport (min-width: 992px);  /* Medium screen / desktop */
+  @custom-media --screen-lg-viewport (min-width: 1200px); /* Large screen / wide desktop */
 }
