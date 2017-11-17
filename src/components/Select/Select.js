@@ -1,7 +1,9 @@
+/* eslint-disable */
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Select.scss';
+/* eslint-enable */
 
 /**
  * Simple select element
@@ -16,21 +18,19 @@ const Select = props => {
     </option>
   ));
   return (
-    <div className={s.container}>
-      <label className={s.label} htmlFor={props.id}>
-        {props.label}
-        <div className={s.selectContainer}>
-          <select
-            className={s.select}
-            onChange={props.handleChange}
-            name={props.id}
-            id={props.id}
-          >
-            {options}
-          </select>
-        </div>
-      </label>
-    </div>
+    <label className={s.label} htmlFor={props.id}>
+      {props.label}
+      <div className={s.selectContainer}>
+        <select
+          className={s.select}
+          onChange={props.handleChange}
+          name={props.id}
+          id={props.id}
+        >
+          {options}
+        </select>
+      </div>
+    </label>
   );
 };
 
